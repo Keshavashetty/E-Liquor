@@ -1,0 +1,396 @@
+*{
+    margin:0;
+    font-family: arial;
+    border: border-box;
+    
+}
+
+.navigator{
+    height: 80px;
+    min-width: 100%;
+    background-color: #431c00;
+    color:white;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    position:relative;
+    justify-content: space-evenly;
+}
+
+.border{
+    border-radius: 4px;
+    padding: 5px 10px;
+    border:2px solid transparent;
+}
+
+.border:hover{
+    border:1.5px solid white;
+}
+
+.navmenu{
+    display: flex;
+    margin-left: 20px;
+    
+}
+
+.select{
+    display: flex;
+    margin-left: 50px;
+    justify-content: space-evenly;
+    background-color:#431c00 ;
+    gap: 20px;
+}
+
+.select select {
+    background-color: #431c00; 
+    color: white; 
+    border: 1px solid transparent; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.select select:hover{
+    border:1.5px solid white;
+}
+
+.search{
+    display: flex;
+    margin-left: 80px;
+}
+
+
+.searchinput{
+    width:700px;
+    height: 20px;
+    border: 2px solid transparent; 
+    border-radius: 2px;
+    padding: 2px 5px;
+}
+
+
+.searchicon{
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    padding: 2px 5px;
+}
+
+.searchicon:hover{
+    border: 1px solid white;
+
+}
+
+.signin-btn{
+    background-color: #431c00;
+    border: none;
+    color: white;
+    font-size: large;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    padding: 2px 5px;
+}
+
+.signin-btn:hover{
+    border: 1px solid white;
+}
+
+
+.cart{
+    display: flex;
+    margin-left: 20px;
+}
+
+
+.background-video-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1; 
+    opacity: 0.8;
+}
+
+.content {
+    position: relative;
+    z-index: 1; 
+    color: white;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 100%;
+    font-size: 30px;
+    font-style: italic;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    height: 350px;
+}
+
+
+.image {
+    flex: 1;
+    max-width: 250px; 
+    position: relative;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.image img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.image h2 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    font-style: italic;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.details {
+    flex: 2; 
+    padding-left: 20px;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.description{
+    flex: 2; 
+    padding-left: 20px;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    font-style: italic;
+} 
+
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+
+.add-to-cart {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.add-to-cart:hover {
+    background: #cc0000;
+}
+
+
+/* .product:hover .image {
+    animation: slideInImage 1s ease-in-out forwards;
+}
+
+.product:hover .details {
+    animation: slideInText 1s ease-in-out forwards;
+}
+
+.product:hover .description{
+    animation: slideindescribe 1s ease-in-out forwards;
+}
+
+.image, .details, .description {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.product:hover .image, 
+.product:hover .details, 
+.product:hover .description {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+@keyframes slideInImage {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInText {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideindescribe {
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+} */
+
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.image, .details, .description {
+    animation: slideIn 4.5s ease-in-out forwards;
+}
+
+
+.foot {
+    background-color: #2a1a12; 
+    padding: 20px;
+    color: white;
+    width: 1630px;
+}
+
+
+.contents {
+    display: flex; 
+    justify-content: space-evenly;
+    gap: 50px; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    margin-top: 20px;
+}
+
+.contents ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contents h3 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+}
+
+.contents a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 5px 0;
+}
+
+.contents a:hover {
+    text-decoration: underline;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter input {
+    margin-top: 5px;
+    padding: 5px;
+    border: none;
+    background-color: #543a2f;
+    color: white;
+}
+
+
+.subscribe-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #74482e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.subscribe-btn:hover {
+    background-color: #241e1b;
+}

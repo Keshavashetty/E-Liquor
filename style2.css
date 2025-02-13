@@ -1,0 +1,36 @@
+@keyframes slideFromLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideFromRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideFromTop {
+    from { transform: translateY(-100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideFromBottom {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.alcohol .box {
+    opacity: 0;  
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+
+.alcohol .box:nth-child(1) { animation-name: slideFromLeft; animation-delay: 1s; }
+.alcohol .box:nth-child(2) { animation-name: slideFromTop; animation-delay: 1.5s; }
+.alcohol .box:nth-child(3) { animation-name: slideFromBottom; animation-delay: 1s; }
+.alcohol .box:nth-child(4) { animation-name: slideFromRight; animation-delay: 1.5s; }
+.alcohol .box:nth-child(5) { animation-name: slideFromLeft; animation-delay: 2s; }
+.alcohol .box:nth-child(6) { animation-name: slideFromTop; animation-delay: 2.5s; }
+.alcohol .box:nth-child(7) { animation-name: slideFromBottom; animation-delay: 2s; }
+.alcohol .box:nth-child(8) { animation-name: slideFromRight; animation-delay: 2.5s; }
+

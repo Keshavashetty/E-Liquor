@@ -1,0 +1,263 @@
+*{
+    margin:0;
+    font-family: arial;
+    border: border-box;
+    
+}
+
+.navigator{
+    height: 80px;
+    min-width: 1670px;
+    background-color: #431c00;
+    color:white;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    position:relative;
+}
+
+.border{
+    border-radius: 4px;
+    padding: 5px 10px;
+    border:2px solid transparent;
+}
+
+.border:hover{
+    border:1.5px solid white;
+}
+
+.navaccount{
+    display: flex;
+    margin-left: 20px;
+    
+}
+
+.select{
+    display: flex;
+    margin-left: 50px;
+    justify-content: space-evenly;
+    background-color:#431c00 ;
+    gap: 20px;
+}
+
+
+.options{
+    background-color: white;
+    color: black
+}
+
+
+.select select {
+    background-color: #431c00; 
+    color: white; 
+    border: 1px solid transparent; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.select select:hover{
+    border:1.5px solid white;
+}
+
+.search{
+    display: flex;
+    margin-left: 80px;
+}
+
+
+.searchinput{
+    width:400px;
+    height: 20px;
+    border: 2px solid transparent; 
+    border-radius: 2px;
+    padding: 2px 5px;
+}
+
+
+.searchicon{
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    padding: 2px 5px;
+}
+
+.searchicon:hover{
+    border: 1px solid white;
+
+}
+
+.signin-btn{
+    background-color: #431c00;
+    border: none;
+    color: white;
+    font-size: large;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    padding: 2px 5px;
+}
+
+.signin-btn:hover{
+    border: 1px solid white;
+}
+
+
+.cart{
+    display: flex;
+    margin-left: 20px;
+}
+
+
+.main {
+     background-image: url("Background2.jpg" );
+     background-size:cover;
+     background-repeat: no-repeat; 
+     height: 600px;
+     width: 1670px;
+     display: flex;
+     align-items: center;
+     justify-content:center;
+     flex-direction: column;
+    }
+
+.logo{
+    background-image: url("Logo2e.png");
+    height:350px;
+    width: 350px;
+    background-size: cover;
+   
+}
+
+.para {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    align-items: center;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    text-align: center;
+    margin-top: 350px;
+}
+
+.alcohol{
+    display: flex;
+    width: 1670px;
+    justify-content: space-evenly;
+    background-color:  #321f13;
+    opacity: 1;
+    gap: 15px;
+    flex-wrap: wrap;
+   
+}
+
+.box{
+    height: 390px;
+    width: 350px;
+    background-color: #624638;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 10px 0px 10px;
+    align-items: center;
+
+}
+
+.image{
+    height: 340px;
+    width: 300px;
+    background-size: cover;
+}
+
+.text{
+    color: white;
+}
+
+.content{
+    margin-left: 23px;
+    margin-right: 10px;
+}
+
+.content p{
+    color: white;
+    text-decoration: underline;
+}
+
+.content h2{
+    color:#f4f3e6;
+}
+
+.foot {
+    background-color: #2a1a12; 
+    padding: 20px;
+    color: white;
+    width: 1630px;
+}
+
+
+.contents {
+    display: flex; 
+    justify-content: space-evenly;
+    gap: 50px; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    margin-top: 20px;
+}
+
+.contents ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contents h3 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+}
+
+.contents a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 5px 0;
+}
+
+.contents a:hover {
+    text-decoration: underline;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter input {
+    margin-top: 5px;
+    padding: 5px;
+    border: none;
+    background-color: #543a2f;
+    color: white;
+}
+
+
+.subscribe-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #74482e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.subscribe-btn:hover {
+    background-color: #241e1b;
+}
